@@ -4,6 +4,8 @@
 @import "global";
 
 .header{
+  position: relative;
+  height: 100vh;
   &__slider{
     &-item{
       height: 100vh;
@@ -50,7 +52,20 @@
 }
 
 
+.slider-arrows{
+  position: absolute;
+  top: 40px;
+  cursor: pointer;
+  z-index: 4;
+  &__left{
+    position: absolute;
+    right: 125px;
+  }
 
-
+  &__right{
+    position: absolute;
+    right: 80px;
+  }
+}
 
 @import "media";
