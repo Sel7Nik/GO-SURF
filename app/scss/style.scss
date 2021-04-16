@@ -1,6 +1,53 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
+
+.header{
+  &__slider{
+    &-item{
+      height: 100vh;
+      background-image: url(../img/header-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+  }
+}
+
+.slider-item{
+  &__info{
+    position: absolute;
+    right: 80px;
+    bottom: 116px;
+    text-align: right;
+    color: #FFF;
+    text-transform: uppercase;
+
+      &-title{
+        font-size: 80px;
+        line-height: 86px;
+        font-weight: 800;
+        margin-bottom: 48px;
+      }
+
+      &-suptitle{
+        margin-bottom: 5px;
+      }
+      // slider-item__info-text
+      &-text{
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: 20px;
+      }
+
+      &-suptext{
+        margin-bottom: 8px;
+      }
+  }
+}
 
 
 
