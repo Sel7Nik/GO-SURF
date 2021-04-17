@@ -68,4 +68,57 @@
   }
 }
 
+
+
+
+
+.slider-dots{
+  position: absolute;
+  right: 50px;
+  max-width: 920px;
+  bottom: 36px;
+  width: 100%;
+  color: #FFF;
+
+  .slick-current{
+    .dots-box{
+      border-top: 4px solid $green;
+    }
+  }
+  &__item{
+    
+  }
+
+  .dots-box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    align-items: center;
+    border-top: 4px solid #fff;
+    padding-top: 6px;
+    cursor: pointer;
+
+    &__number{
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 34px;
+      
+    }
+
+    &__name{
+      font-weight: 300;
+      line-height: 19px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 @import "media";
