@@ -7,3 +7,10 @@ height: 100vh;
 https://youtu.be/TisGtkOPh24?list=PLN2KCaMlZNdBEtr55AmjP_67lo8jWoCqt&t=4203
 1:10
 Меню дата стрелка вниз
+
+
+
+https://youtu.be/TisGtkOPh24?list=PLN2KCaMlZNdBEtr55AmjP_67lo8jWoCqt&t=6915
+1:55:15
+Анимирование
+Библиотека  animate.css

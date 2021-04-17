@@ -20,6 +20,13 @@
     z-index: 5;
   }
 
+
+  &__map{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+  }
   &__aside{
     position: absolute;
     left: 0;
@@ -91,10 +98,25 @@
     }
   }
 
+    &__arrows{
+      position: absolute;
+      left: 209px;
+      bottom: 30px;
+      z-index: 3;
+    }
 
-
-
-
+    &__map{
+      .line-animation{
+        stroke-dashoffset: 600;
+        stroke-dasharray: 600;
+        animation: animdash 8s infinite 16s ;
+      }
+    }
+    @keyframes animdash{
+      to{
+      stroke-dashoffset: 0;
+      }
+    }
 
   &__slider{
     &-item{
@@ -106,12 +128,6 @@
       position: relative;
     }
   }
-
-
-
-
-
-
 
 
 }
