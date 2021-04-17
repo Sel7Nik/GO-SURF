@@ -1,2 +1,9 @@
-Всю высоту экранк
+Всю высоту экрана
 height: 100vh;
+
+
+
+
+https://youtu.be/TisGtkOPh24?list=PLN2KCaMlZNdBEtr55AmjP_67lo8jWoCqt&t=4203
+1:10
+Меню дата стрелка вниз

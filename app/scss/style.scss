@@ -6,6 +6,96 @@
 .header{
   position: relative;
   height: 100vh;
+
+  &__title{
+    font-weight: 800;
+    font-size: 200px;
+    line-height: 156px;
+    text-transform: uppercase;
+    opacity: 0.07;
+    max-width: 467px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+
+  &__aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 100vh;
+    border-right: 1px solid rgba(white, .25);
+    text-align: center;
+
+    .logo{
+      // margin-bottom: 122px;
+    }
+  }
+
+//  .header__aside .menu
+  .menu{
+    padding-top: 40px;
+    &__list{
+      span{
+        display: block;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        padding-top: 6px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  // .header__search
+  &__search{
+    padding-top: 15px;
+   margin-bottom: 35px;
+  }
+  // .header__date
+  &__date{
+    font-size: 72px;
+    line-height: 64px;
+    font-weight: 800;
+    span{
+      display: block;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 1.4px;
+      margin-bottom: 30px;
+      padding-top: 17px;
+    }
+  }
+
+  &__location{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.05px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 19px;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 13px;
+      left: 0;
+      background-image: url('../img/marker.svg');
+
+
+    }
+  }
+
+
+
+
+
+
   &__slider{
     &-item{
       height: 100vh;
@@ -16,6 +106,14 @@
       position: relative;
     }
   }
+
+
+
+
+
+
+
+
 }
 
 .slider-item{
@@ -24,7 +122,6 @@
     right: 80px;
     bottom: 116px;
     text-align: right;
-    color: #FFF;
     text-transform: uppercase;
 
       &-title{
@@ -78,7 +175,6 @@
   max-width: 920px;
   bottom: 36px;
   width: 100%;
-  color: #FFF;
 
   .slick-current{
     .dots-box{
