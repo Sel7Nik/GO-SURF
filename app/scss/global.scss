@@ -1,7 +1,18 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
 body{
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  color: #FFF;
+  background-color: #171919;
+  text-transform: uppercase;
 }
 a{
   display: inline-block;
@@ -15,17 +26,21 @@ ul,li{
 
 }
 
+.container{
+  max-width:  1920px;
+  margin: 0 auto;
+  padding: 0;
+}
 .header{
   color: #FFF;
 }
 
-.suptitle{
+.headline{
   &-left{
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
     text-transform: uppercase;
-    color:  #fff;
     opacity: 0.5;
     padding-left: 103px;
     position: relative;
@@ -44,4 +59,72 @@ ul,li{
 }
 
 
+.slider-arrows {  
+  position: absolute;
+  top: 40px;
+  cursor: pointer;
+  z-index: 4;
+
+  &__left {
+    position: absolute;
+    right: 125px;
+  }
+
+  &__right {
+    position: absolute;
+    right: 80px;
+  }
+} //.slider-arrows
+
+
+
+
+.subtitle{
+  display: inline-block;
+  text-align: right;
+  &__head{
+    font-weight: 800;
+    font-size: 40px;
+    padding-right: 10px;
+    span{
+      font-weight: 100;
+    }
+    
+
+  }
+}
+
+.btn {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  // height: 80px;
+  span{
+    padding: 17px 57px 15px 17px;
+    background-color: #4AF6CD;
+    display: inline-block;
+    margin-left: 19px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: #fff;
+      top: 50%;
+      left: -10px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 20px;
+      background-image: url(../img/arrow-right.svg);
+      top: 50%;
+      transform: translateY(-50%);
+      right: 16px;
+
+    }
+  }
+}
 
