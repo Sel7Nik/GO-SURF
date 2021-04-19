@@ -23,12 +23,21 @@ $('.slick-slider-dots').slick({
 $('.surf-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
-  // dots: true,
-  // focusOnSelect: true,
+  asNavFor: '.surf-map',
   prevArrow: `<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="link arrow-left">`,
   nextArrow: `<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="link arrow-right">`,
+
 });
 
+
+$('.surf-map').slick({
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  arrows:false,
+  asNavFor: '.surf-slider',
+  focusOnSelect:true,
+
+});
 
 
 });

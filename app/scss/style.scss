@@ -265,6 +265,115 @@
     margin-top: -86px;
   }
 
+// surf-map ( slider-map)
+&-map {
+  max-width: 1200px;
+  min-height: 635px;
+  background-image: url(../img/world-map-dots.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+
+  .slick-list{
+    // position: absolute;
+    height: 635px;
+    // top: 0;
+    // bottom: 0;
+  }
+  .slider{
+   
+
+    &-dots {
+      position: relative;
+
+      &__circle {
+        width: 24px;
+        height: 24px;
+        background-color:$green;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+         
+      }
+
+      &--1{
+        position: absolute;
+        top: 335px;
+        left: 0;
+      }
+      &--2{
+        position: absolute;
+        top: 280px;
+        left: 13%;
+        
+        .slider-dots__circle::before {
+          content: '';
+          position: absolute;
+          background-image: url('../img/mini-location-icon.svg');
+          background-size: cover;
+          width: 14px;
+          height: 17px;
+          right: -20px;
+          top: -25px
+        }
+       
+      }
+
+      &--3{
+        position: absolute;
+        top: 330px;
+        left: 25%;
+      }
+      &--4{
+        position: absolute;
+        top: 470px;
+        left: 35%;
+      }
+      &--5{
+        position: absolute;
+        top: 230px;
+        left: 45%;
+      }
+      &--6{
+        position: absolute;
+        top: 550px;
+        left: 52%;
+      }
+      &--7{
+        position: absolute;
+        top: 375px;
+        left: 75%;
+      }
+      &--8{
+        position: absolute;
+        top: 470px;
+        left: 90%;
+      }
+
+
+      &__content {
+        display: none;
+        &-row {}
+
+        &-head {
+          &-title {}
+
+          &-subtitle {}
+        }
+
+        &-link {}
+
+        &-item {}
+
+        &-number {}
+
+        &-name {}
+      }
+    }
+  }
+}
+
   &-slider {
     padding-top: 110px;
 
@@ -273,6 +382,7 @@
       opacity: 0.25;
     }
   }
+
 
 
 // .slick-slide
@@ -301,9 +411,6 @@
       }
     }
   }
-
-
-
 
 
 
