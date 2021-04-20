@@ -26,7 +26,16 @@ ul,li{
 
 }
 
+.section{
+  padding: 160px 0 120px;
+}
+
+.travel{
+  padding: 160px 0 265px;
+}
+
 .container{
+  // max-width:  1920px;
   max-width:  1920px;
   margin: 0 auto;
   padding: 0;
@@ -35,14 +44,17 @@ ul,li{
   color: #FFF;
 }
 
+
+// headline-right headline-left
 .headline{
-  &-left{
+  &-left,
+  &-right {
     font-size: 22px;
     line-height: 32px;
     letter-spacing: 7.33333px;
     text-transform: uppercase;
     opacity: 0.5;
-    padding-left: 103px;
+
     position: relative;
     display: inline-block;
 
@@ -53,9 +65,23 @@ ul,li{
       height: 1px;
       background-color: #fff;
       top:50%;
+    
+    }
+    
+  }
+  &-left{
+    padding-left: 103px;
+    &::before {
       left:0px;
     }
   }
+  &-right{
+    padding-right: 103px;
+    &::before {
+      right:0px;
+    }
+  }
+
 }
 
 
@@ -72,16 +98,54 @@ ul,li{
 
   &__right {
     position: absolute;
-    right: 80px;
+    right: 88px;
   }
 } //.slider-arrows
 
 
 
+.title {
+  position: relative;
+
+  span {
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 200px;
+    color: rgba(#fff, .05);
+    transform: translateX(-50px);
+
+    h3 {
+      position: absolute;
+      color: #fff;
+      font-size: 80px;
+      margin: 0;
+      top: 0;
+      right: -5px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 80px;
+        height: 1px;
+        right: 0;
+        top: 0;
+        background-color: #4AF6CD;
+      }
+    }
+  }
+}
+
 
 .subtitle{
-  display: inline-block;
+  // display: inline-block;
   text-align: right;
+  padding-right: 80px;
+  &_position{
+    text-align: right;
+    padding-right: 80px;
+    margin-top: -86px;
+  }
   &__head{
     font-weight: 800;
     font-size: 40px;
@@ -89,10 +153,27 @@ ul,li{
     span{
       font-weight: 100;
     }
-    
+  }
+}
+
+
+
+.description {
+  display: inline-block;
+  // padding-right: 80px;
+  padding-left: 5px;
+  &__head {
+    font-weight: 800;
+    font-size: 40px;
+    span {
+      font-weight: 100;
+    }
+     .air-img {}
 
   }
 }
+
+
 
 .btn {
   font-weight: 800;
@@ -126,3 +207,7 @@ ul,li{
     }
   }
 }
+
+
+// travel-slider__item
+.slider__item{}
