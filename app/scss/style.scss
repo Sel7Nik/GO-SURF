@@ -565,12 +565,14 @@
 
 
 
-
-.travel{
+// Global style
+.holder{
   // padding: 160px 0 120px;
-  background-image: url("../img/travel-glass-bg.svg");
+  // background-image: url("../img/travel-glass-bg.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
+  padding: 160px 0 265px;
+  margin-bottom: 160px;
 
   &-slider {
 
@@ -638,7 +640,7 @@
           line-height: 36px;
           padding-left: 40px;
           position: relative;
-          span{
+          &-span {
             font-weight: 400;
             font-size: 14px;
             line-height: 0px;
@@ -668,7 +670,80 @@
 
   }
 
+}
 
+.travel.holder{
+  background-image: url("../img/travel-glass-bg.svg");
+  padding: 160px 0 265px;
+  margin-bottom: 160px;
+}
+
+.sleep.holder{
+  background-image: url("../img/flover-big-bg.png");
+  padding: 160px 0 65px;
+  margin-bottom: 160px;
+
+    .holder-slider {
+
+      &__item {
+
+        &-head {
+
+          &__subtitle {
+          }
+
+        }
+
+        &-description {
+            min-height: 385px;
+            background-position: right top;
+            margin-top: -285px;
+
+            img.air-img {
+            padding-left: 10px;
+            }
+          
+        }
+
+      }
+
+
+      .slider-arrows {
+
+      }
+
+
+      &__info {
+
+
+        &-item {
+
+
+          &-subtitle {
+
+          }
+
+          &-title {
+
+            span {
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .slider__info {
+        &-item {}
+
+      }
+
+      &__btn {
+      }
+
+    }
 
 }
 
