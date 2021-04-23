@@ -862,12 +862,25 @@
 
 
 
+.footer{
+  text-align: center;
+  padding-top: 285px;
+  .btn{
+    span{
+      padding: 17px 17px 15px;
+      &::after{
+        display: none;
+      }
+    }
+  }
 
 
-// .surfboard-box__circle.active + .surfboard-box__content {
-//   display: block;
-// }
 
+  &__copy{
+    margin: 27px 0 34px;
+  }
+
+}
 
 
 

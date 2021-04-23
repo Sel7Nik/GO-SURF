@@ -57,7 +57,7 @@ $(function () {
     arrows: true,
     prevArrow: `<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="link arrow-left">`,
     nextArrow: `<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="link arrow-right">`,
-    // focusOnSelect: true,
+    focusOnSelect: true,
   });
 
 
