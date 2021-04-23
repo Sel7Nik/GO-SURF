@@ -51,6 +51,16 @@ $(function () {
   });
 
 
+  $('.shop__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: `<img class="slider-arrows slider-arrows__left" src="img/arrow-left.svg" alt="link arrow-left">`,
+    nextArrow: `<img class="slider-arrows slider-arrows__right" src="img/arrow-right.svg" alt="link arrow-right">`,
+    // focusOnSelect: true,
+  });
+
+
 
 
   $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img class="air-img" src="../img/plus.svg" alt="star-logo"></div><div class="quantity-button quantity-down"><img class="air-img" src="../img/minus.svg" alt="star-logo"></div></div>').insertAfter('.quantity input');
@@ -98,7 +108,10 @@ let sum = $('.nights').val() * $('.summ').data('nights') + ($('.guests').val() -
 $('.summ').html('$' + sum);
   
 
-
+$('.surfboard-box__circle').on('click', function(){
+$(this).toggleClass('active');
+// $('.surfboard-box__content').css('display','none');
+});
 
 
 });
